@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous">
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+   <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="work_1.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand">PRACTICE</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">  
+                <li><a href="work.html">HOME</a></li>
+                <li><a href="1.html">ERP</a></li>
+                <li><a href="5.html">MES</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <div class="carousel-caption">
+              <h1>ERP와 MES에 대해 소개합니다.</h1>
+              <p>업무 효율화에 최적화되고 편리하며 사용하기 쉬운 ERP와 MES! </p>
+                <p>
+                  <a class="btn btn-lg btn-default" href="1.html" role="button">ERP란?</a> 
+                  <a class="btn btn-lg btn-default" href="5.html" role="button">MES란?</a>
+                </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col">
+          <h2>ERP소개 및 특징</h2>
+          <p>기업 참고</p>
+          <p>
+             <a class="btn btn-default" role="button" onclick="btn1()">다해아이앤씨(주)</a> 
+             <a class="btn btn-default" role="button" onclick="btn2()">이카운트</a>
+             <a class="btn btn-default" role="button" onclick="btn3()">모아티티</a>
+             <a class="btn btn-default" role="button" onclick="btn4()">OCI정보통신주식회사</a>
+             <a class="btn btn-default" role="button" onclick="btn5()">영림원 소프트랩</a>
+             <a class="btn btn-default" role="button" onclick="btn6()">솔바테크놀러지</a>
+             <a class="btn btn-default" role="button" onclick="btn7()">엔터빌더</a>
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col">
+          <h2>ERP시스템구성 및 기능</h2>
+          <p>기업 참고</p>
+           <p>
+               <a class="btn btn-default" role="button" onclick="btn8()">(주)이매스ICT</a>
+               <a class="btn btn-default" role="button" onclick="btn9()">(주)도움이티에스</a>
+               <a class="btn btn-default" role="button" onclick="btn10()">ERP 모아티티</a>
+               <a class="btn btn-default" role="button" onclick="btn11()">더존ICT그룹</a>
+               <a class="btn btn-default" role="button" onclick="btn12()">미래정보기술</a>
+               <a class="btn btn-default" role="button" onclick="btn13()">SnS-ERP</a>
+           </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col">
+          <h2>ERP기대효과</h2>
+          <p>기업 참고</p>
+           <p>
+               <a class="btn btn-default" role="button" onclick="btn14()">(주)이맥스ICT</a>
+               <a class="btn btn-default" role="button" onclick="btn15()">미래정보기술</a>
+               <a class="btn btn-default" role="button" onclick="btn16()">ERP 모아티티</a>
+               <a class="btn btn-default" role="button" onclick="btn17()">미라콤아이앤씨</a>
+           </p>
+        </div><!-- /.col-lg-4 -->
+           <div class="col">
+        <h2>MES구축회사</h2>
+          <p>기업 참고</p>
+            <p>
+                <a class="btn btn-default" role="button" onclick="btn18()">SPCLink예스아이솔루션</a>
+                <a class="btn btn-default" role="button" onclick="btn19()">미라콤아이앤씨</a>
+                <a class="btn btn-default" role="button" onclick="btn20()">미래정보기술</a>
+                <a class="btn btn-default" role="button" onclick="btn21()">(주)클릭원스</a>
+                <a class="btn btn-default" role="button" onclick="btn22()">비컴솔루션(주)</a>
+                <a class="btn btn-default" role="button" onclick="btn23()">MES 모아티티</a>
+                <a class="btn btn-default" role="button" onclick="btn24()">엔터빌더</a>
+                <a class="btn btn-default" role="button" onclick="btn25()">(주)케이에스아이</a>
+            </p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+<script>
+    function btn1(){
+        window.open("https://www.dahaeinc.co.kr/01_erp/01.aspx");
+    }
+    function btn2(){
+        window.open('https://www.ecount.co.kr/ecount/product/erp_overview');
+    }
+    function btn3(){
+        window.open('http://smart.moatt.co.kr/product/erp.php#scroll_6');
+    }
+    function btn4(){
+        window.open('http://www.onerp.kr/?n_media=122875&n_query=ERP&n_rank=16&n_ad_group=grp-m001-01-000001673717807&n_ad=nad-m001-01-000001673717807&n_keyword_id=nkw-m001-01-000001673717814&n_keyword=ERP&n_campaign_type=1');
+    }    
+    function btn5(){
+        window.open('https://www.ksystem.co.kr/맞춤형-erp');
+    }    
+    function btn6(){
+        window.open("http://www.solva.co.kr/qms/erp.aspx");
+    }    
+    function btn7(){
+        window.open("http://www.eber.kr/ebnew/product/erp.asp");
+    }    
+    function btn8(){
+        window.open("http://emaxict.com/?pCode=1531440449");
+    }    
+    function btn9(){
+        window.open('http://www.duzonit.co.kr/product/erp_iu.php');
+    }    
+    function btn10(){
+        window.open('http://smart.moatt.co.kr/product/erp.php#scroll_3');
+    }    
+    function btn11(){
+        window.open('http://www.douzone.com/product/erp/erp02_icube_01');
+    }    
+    function btn12(){
+        window.open('http://www.mirae-info.net/sub3_1.php');
+    }    
+    function btn13(){
+        window.open("https://sns-erp.com/gallery");
+    }    
+    function btn14(){
+        window.open("http://emaxict.com/?pCode=1531440449");
+    }    
+    function btn15(){
+        window.open('http://www.mirae-info.net/sub3_1.php');
+    }    
+    function btn16(){
+        window.open('http://smart.moatt.co.kr/product/erp.php#scroll_7');
+    }    
+    function btn17(){
+        window.open('http://www.miracom.co.kr/common/index.do?jpath=/kor/offering/erp');
+    }    
+    function btn18(){
+        window.open("http://www.spclink.co.kr/sub/sub0402.php");
+    }    
+    function btn19(){
+        window.open('http://www.miracom.co.kr/common/index.do?jpath=/kor/solution/mesplus');
+    }    
+    function btn20(){
+        window.open('http://www.mirae-info.net/sub3_3.php');
+    }    
+    function btn21(){
+        window.open('http://www.clickones.co.kr/product_mes.html');
+    }    
+    function btn22(){
+        window.open('http://www.becomesolution.com/subpage.php?sd=3&sc=3_4_1');
+    } 
+    function btn23(){
+        window.open("http://smart.moatt.co.kr/product/mes.php#scroll_1");
+    }
+    function btn24(){
+        window.open("http://www.eber.kr/ebnew/product/mes.asp");
+    }
+    function btn25(){
+        window.open("http://ksimes.co.kr/content/page.php?seq=24");
+    }
+</script>
